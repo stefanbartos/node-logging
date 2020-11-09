@@ -28,7 +28,7 @@ app.post('/log', (req, res) => {
 
     // console.log(req.headers)
     // console.log(req.body)
-    // const data = JSON.stringify(req.body);
+    const data = JSON.stringify(req.body);
     console.log(data)
     fs.appendFile('output.txt', data + '\n', (err) => {
         if (err) {
